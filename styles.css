@@ -47,7 +47,21 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+.navigator-menu {
 
+}
+.intro {
+
+}
+.button {
+    text-transform: uppercase;
+}
+.squiggle-line {
+
+}
 /* --------------- 4.2 Introduction ------------------- */
+.company-profile {
+
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
