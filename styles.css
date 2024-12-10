@@ -26,6 +26,7 @@
 /* ------------------------------- 3. Layout --------------------------------------- */
 header {
     font-family: "Merriweather", serif;
+    background-color: #5722CD;
 }
 
 body {
@@ -47,11 +48,32 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-.navigator-menu {
+
+
+
+.outer-container-header {
+    display: flex;
+    flex-direction: column;
+}
+.inner-container-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: space-between;
+    gap: 50px;
+    color: white;
+
 
 }
-.intro {
-
+.inner-container-intro {
+    display: flex;
+    flex-direction: column;
+    border: 5px dashed white;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    color: white;
 }
 .button {
     text-transform: uppercase;
