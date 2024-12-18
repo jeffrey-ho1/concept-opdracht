@@ -201,13 +201,9 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 50px auto;
     padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border: 5px solid #5722CD;
+    background-color: #F3F6F9;
 }
 
 
@@ -262,4 +258,56 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
 
 }
 
+.services {
+    display: flex;
+    flex-wrap: wrap; /* Laat de items naar de volgende regel gaan */
+    gap: 20px; /* Ruimte tussen de tegels */
+    justify-content: center; /* Centreer de tegels in het midden */
+    padding: 50px 20px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    flex: 0 1 calc(33.333% - 20px);
+    text-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    border: #5722CD 2px solid;
+}
+
+.service img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.service h3 {
+    display: flex;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    color: #5722CD;
+    margin-bottom: 10px;
+}
+.service p {
+    display: block;
+    color: #7A7A7A;
+    font-size: 0.9rem;
+}
+service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
+@media (max-width: 768px) {
+    .service {
+        flex: 0 1 calc(50% - 20px); /* Op kleinere schermen 2 kolommen */
+    }
+}
+@media (max-width: 480px) {
+    .service {
+        flex: 0 1 100%; /* Op zeer kleine schermen 1 kolom */
+    }
+}
