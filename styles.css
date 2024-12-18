@@ -54,6 +54,7 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
     background: linear-gradient(168deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 35%);
 }
 
+
 .navbar-items-inner-container {
     background-color: #5722CD;
     font-family: "Roboto", sans-serif;
@@ -63,10 +64,15 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
     justify-content: end;
     list-style: none;
     gap: 100px;
+    color: white;
 
+}
 
-
-
+.navbar-items-inner-container a:link {
+    color: white;
+}
+.navbar-items-inner-container a:visited {
+    color: white;
 }
 
 /* --------------- 4.2 Introduction ------------------- */
@@ -190,41 +196,70 @@ Grijs #7A7A7A; /*(voor de service-tegel tekst);*/
 
 /*--------------------------------4.3 main ------------------------------------------*/
 
-.outer-cont-projectsprojects {
+.outer-cont-projects {
     display: flex;
     flex-wrap: wrap;
-    background-color: #F3F6F9;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border: 5px solid #5722CD;
 }
 
-.project {
-    display: flex;
-    flex-direction: row;
-}
-.project {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex: 1 1 300px;
-    max-width: 400px;
+
+
+
+.image-wrapper {
+    order: 2;
+    flex-grow: 0;
+    flex-shrink: 1;
+    box-shadow: 5px 15px 6px -2px rgba(0, 0, 0, 0.6);
 }
 
-.project img {
-    width: 100%;
-}
-
-.project-content {
-    padding: 20px;
-}
 
 .project-content h3 {
     font-family: 'Merriweather', serif;
     font-size: 1.5rem;
-    margin: 0 0 10px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.project-content a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #5e42ff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.project-roll {
+    display: flex;
+}
+
+
+
+.project-var {
+    display: flex;
+}
+.project-worth {
+    display: flex;
+}
+
+
+.worth-img {
+    order: 2
+
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
